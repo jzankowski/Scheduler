@@ -1,0 +1,35 @@
+{
+  "name": "calendar-scheduler",
+  "version": "1.0.0",
+  "description": "A full-stack web application for calendar scheduling with two distinct user experiences",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "init-db": "cd backend && npm run init-db",
+    "build": "cd frontend && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jzankowski/Scheduler.git"
+  },
+  "keywords": [
+    "calendar",
+    "scheduling",
+    "react",
+    "nodejs",
+    "express",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/jzankowski/Scheduler/issues"
+  },
+  "homepage": "https://github.com/jzankowski/Scheduler#readme"
+}
